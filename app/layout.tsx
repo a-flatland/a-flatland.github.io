@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://annabel-flatland.annabelflatland.chatgpt.site'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      'https://annabel-flatland.annabelflatland.chatgpt.site',
+  ),
   title: 'Annabel Flatland — Software Engineer',
   description:
     'Annabel Flatland is a software engineer building intelligent systems, curious interfaces, and tools for the physical world.',
