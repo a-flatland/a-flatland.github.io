@@ -53,6 +53,7 @@ export default function Home() {
         </a>
         <div className="nav-links">
           <a href="#work">Work</a>
+          <a href="#blog">Blog</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
@@ -126,6 +127,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="blog-teaser" id="blog">
+        <div className="blog-teaser-heading">
+          <p className="eyebrow">Latest writing</p>
+          <h2>Notes from the<br /><em>workbench.</em></h2>
+        </div>
+        <a className="blog-teaser-card" href="/blog/this-is-a-test-page">
+          <div className="blog-teaser-meta">
+            <span>01</span>
+            <span>Oct 10, 2026</span>
+            <span>1 min read</span>
+          </div>
+          <div className="blog-teaser-copy">
+            <p>Notes / First post</p>
+            <h3>This is a test page</h3>
+            <span className="read-post">Read the post <span aria-hidden="true">↗</span></span>
+          </div>
+          <div className="blog-teaser-mark" aria-hidden="true">✦</div>
+        </a>
+        <a className="all-posts-link" href="/blog">View all posts <span aria-hidden="true">→</span></a>
+      </section>
+
       <section className="about-section" id="about">
         <div className="about-marker" aria-hidden="true">
           <span>ABOUT</span>
@@ -158,6 +180,7 @@ export default function Home() {
         <p className="footer-kicker">Have an interesting problem?</p>
         <h2>Let&apos;s make something <em>good.</em></h2>
         <div className="footer-links">
+          <a href="/blog">Blog <Arrow /></a>
           <a href="https://github.com/a-flatland" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
           <a href="https://www.linkedin.com/in/annabel-flatland" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
         </div>
